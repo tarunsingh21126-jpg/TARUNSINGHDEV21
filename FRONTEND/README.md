@@ -1,16 +1,178 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# ✨ Personal Portfolio
 
-Currently, two official plugins are available:
+### Crafting clean, modern and responsive web experiences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <a href="https://your-portfolio.vercel.app">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-blue?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/yourusername">
+    <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github" />
+  </a>
+</p>
 
-## React Compiler
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&duration=3500&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Frontend+Developer;React+Developer;Open+Source+Learner;Always+Learning+New+Things" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+# 🚀 About
+
+This portfolio represents my journey as a developer and showcases my projects, skills, certifications, and achievements.
+
+> Building elegant interfaces with modern web technologies.
+
+---
+
+# 🛠 Tech Stack
+
+<div align="center">
+
+| Frontend | Styling | Tools |
+|-----------|----------|-------|
+| React | Tailwind CSS | Git |
+| JavaScript | CSS3 | GitHub |
+| HTML5 | Responsive Design | VS Code |
+| Vite | Framer Motion | npm |
+
+</div>
+
+---
+
+# ✨ Features
+
+✅ Responsive Design
+
+✅ Modern UI
+
+✅ Animated Components
+
+✅ Mobile Friendly
+
+✅ Fast Performance
+
+✅ Reusable Components
+
+✅ Clean Folder Structure
+
+✅ Easy Customization
+
+---
+
+# 📂 Folder Structure
+
+```text
+Portfolio
+│
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+---
+
+# ⚙ Installation
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+```
+
+```bash
+cd portfolio
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+---
+
+# 📸 Preview
+
+<p align="center">
+
+Add screenshots here
+
+Home Page
+
+Projects
+
+Contact
+
+About
+
+</p>
+
+---
+
+# 📊 Project Stats
+
+| Category | Status |
+|----------|--------|
+| Responsive | ✅ |
+| Mobile Friendly | ✅ |
+| Dark Mode | ✅ |
+| Deploy Ready | ✅ |
+| Open Source | ✅ |
+
+---
+
+# 📌 Future Improvements
+
+- 🌙 Theme Switcher
+- 📄 Resume Download
+- 📧 Contact Backend
+- 📈 Blog Section
+- 🎨 More Animations
+- 🌍 Multi-language Support
+
+---
+
+# 🤝 Connect With Me
+
+<div align="center">
+
+<a href="https://linkedin.com/in/yourusername">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
+
+<a href="https://github.com/yourusername">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="mailto:your@email.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail"/>
+</a>
+
+<a href="https://yourportfolio.vercel.app">
+<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## ⭐ If you like this project, don't forget to leave a star.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:3B82F6,100:9333EA&section=footer"/>
+
+### Made with ❤️ by Tarun Singh
+
+</div>
