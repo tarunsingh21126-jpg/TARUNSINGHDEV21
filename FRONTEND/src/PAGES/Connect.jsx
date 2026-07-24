@@ -34,7 +34,7 @@ function Connect() {
               </a>
             </li>
             <li>
-              <a href="https://x.com/vite_js" target="_blank">
+              <a href="https://tarunsinghdev-21.vercel.app/" target="_blank">
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -42,7 +42,7 @@ function Connect() {
                 >
                   <use href="/icons.svg#x-icon"></use>
                 </svg>
-                Resume
+                Portfolio
               </a>
             </li>
             <li>
