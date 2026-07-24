@@ -8,7 +8,7 @@
   <a href="https://your-portfolio.vercel.app">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-blue?style=for-the-badge" />
   </a>
-  <a href="https://github.com/yourusername">
+  <a href="https://github.com/tarunsingh21126-jpg">
     <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github" />
   </a>
 </p>
@@ -85,7 +85,7 @@ Portfolio
 # ⚙ Installation
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone 
 ```
 
 ```bash
@@ -147,11 +147,11 @@ About
 
 <div align="center">
 
-<a href="https://linkedin.com/in/yourusername">
+<a href="https://www.linkedin.com/in/tarun-singh-267868337/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
 </a>
 
-<a href="https://github.com/yourusername">
+<a href="https://github.com/tarunsingh21126-jpg">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
 </a>
 
