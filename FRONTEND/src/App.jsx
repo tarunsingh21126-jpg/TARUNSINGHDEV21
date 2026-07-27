@@ -7,6 +7,7 @@ import Mainpage from './PAGES/Mainpage'
 import About from './PAGES/About'
 import Connect from './PAGES/Connect'
 import Video from './PAGES/Video'
+import Experience from './PAGES/Experience'
 import './App.css'
 import './html.css'
 
@@ -19,6 +20,7 @@ function App() {
       <Mainpage />
       <About />
       <Video />
+      <Experience />
       <div className="min-h-screen flex items-center justify-center bg-gray-900">
       <h1 className="text-5xl font-bold text-blue-500">
         Tailwind CSS is Working! 🚀
