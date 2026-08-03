@@ -9,8 +9,10 @@ import Connect from './PAGES/Connect'
 import Video from './PAGES/Video'
 import Experience from './PAGES/Experience'
 import Project from './PAGES/Project'
+
 import './App.css'
 import './html.css'
+import Skills from './PAGES/Skills'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,7 @@ function App() {
       <Mainpage />
       <About />
       <Video />
+      <Skills />
       <Experience />
       <Project />
       <div className="min-h-screen flex items-center justify-center bg-gray-900">
