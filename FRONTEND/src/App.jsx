@@ -9,6 +9,7 @@ import Connect from './PAGES/Connect'
 import Video from './PAGES/Video'
 import Experience from './PAGES/Experience'
 import Project from './PAGES/Project'
+import TopLine from './COMPONENTS/TopLine'
 
 import './App.css'
 import './html.css'
@@ -18,7 +19,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="bg-[#030712] text-white min-h-screen">
+      {/* Top Progress Bar Component */}
+      <TopLine />
+      
       <Navbar />
       <Mainpage />
       <About />
@@ -72,7 +76,7 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
-    </>
+    </div>
   )
 }
 
