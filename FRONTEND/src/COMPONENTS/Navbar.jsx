@@ -111,7 +111,7 @@ function Navbar() {
                         hover:text-black
                         transition-all">
 
-                        ↓ Resume
+                        ↓ DOWNLOAD
 
                     </button>
 
