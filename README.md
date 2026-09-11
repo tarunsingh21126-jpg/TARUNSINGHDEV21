@@ -5,7 +5,7 @@
 ### Crafting clean, modern and responsive web experiences.
 
 <p align="center">
-  <a href="https://your-portfolio.vercel.app">
+  <a href="https://tarunsinghdev-21.vercel.app/">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-blue?style=for-the-badge" />
   </a>
   <a href="https://github.com/tarunsingh21126-jpg">
@@ -159,7 +159,7 @@ About
 <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail"/>
 </a>
 
-<a href="">
+<a href="https://tarunsinghdev-21.vercel.app/">
 <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel"/>
 </a>
 

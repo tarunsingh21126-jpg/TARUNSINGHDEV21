@@ -1,29 +1,32 @@
 import { useRef, useState } from "react";
 
+import { TICKER_ITEMS } from "../data";
 
-function Skills() {
-    const skills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "⚡",
-        "Django",
-        "⚛",
-    ];
+
+const HERO_TAGS = ["Python", "Django", "FastAPI", "PostgreSQL", "Celery", "Docker", "AWS"];
+function TickerRow() {
     return (
-        <div className="w-[98%] overflow-hidden ml-5">
-            <div className="flex gap-[50px] animate-[var(--animate-scroll)]">
-                {[...skills, ...skills].map((skill, index) => (
-                    <div
-                        key={index}
-                        className="text-5xl font-bold text-white opacity-90 min-w-[125px] text-center"
-                    >
-                        {skill}
-                    </div>
-                ))}
+        <div className="flex shrink-0 items-center">
+            {TICKER_ITEMS.map((item) => (
+                <span
+                    key={item}
+                    className="flex items-center gap-8 pr-8 font-mono text-[12.5px] uppercase tracking-[0.2em] text-faint"
+                >
+                    {item}
+                    
+                </span>
+            ))}
+        </div>
+    );
+}
+
+export function Skills() {
+    return (
+        <div className="relative overflow-hidden border-y border-line-soft bg-coal/70 py-3.5">
+            <div className="anim-ticker flex w-max">
+                <TickerRow />
+                <TickerRow />
             </div>
         </div>
     )
 }
-
-export default Skills

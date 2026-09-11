@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Background Surfaces ── */
+  --color-bg-primary:   #161617;
+  --color-bg-surface:   #18181B;
+  --color-bg-input:     #1E1E24;
+
+  /* ── Borders ── */
+  --color-border:       #2A2A30;
+  --color-border-focus: #00A07A;
+
+  /* ── Text ── */
+  --color-text-primary:     #F9F7F3;
+  --color-text-secondary:   #A0A0A5;
+  --color-text-placeholder: #7A7A8A;
+
+  /* ── Accents ── */
+  --color-primary:   #00A07A;
+  --color-secondary: #C44547;
+
+  /* ── Legacy aliases ── */
+  --color-charcoal-900: #161617;
+  --color-charcoal-800: #18181B;
+  --color-charcoal-700: #2A2A30;
+  --color-cream:        #F9F7F3;
+  --color-muted:        #A0A0A5;
+
+  /* ── Typography ── */
+  --font-sans:    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+
+  /* ── Radii ── */
+  --radius-pill: 999px;
+  --radius-card: 12px;
+  --radius-btn:  12px;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Display headings: Cormorant Garamond ── */
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  /* ── Subheadings and UI text: Inter ── */
+  h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: var(--font-sans);
+    cursor: pointer;
+  }
+
+  /* ── Focus visible — always show ── */
+  :focus-visible {
+    outline: 2px solid var(--color-border-focus);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: rgba(0, 160, 122, 0.2);
+    color: var(--color-text-primary);
+  }
+
+  /* ── Minimal dark scrollbar ── */
+  ::-webkit-scrollbar        { width: 6px; }
+  ::-webkit-scrollbar-track  { background: var(--color-bg-primary); }
+  ::-webkit-scrollbar-thumb  { background: var(--color-border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ── Typography utility classes ── */
+@layer components {
+  /* Hero headline — Cormorant, 64–72px, tight */
+  .type-hero {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 6.5vw, 72px);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+  }
+
+  /* Section heading — Cormorant, 40–44px */
+  .type-section {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-text-primary);
+  }
+
+  /* Card heading — Inter, 20–22px */
+  .type-card {
+    font-family: var(--font-sans);
+    font-size: clamp(17px, 1.6vw, 22px);
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
+  /* Body text — Inter, 16–17px */
+  .type-body {
+    font-family: var(--font-sans);
+    font-size: clamp(15px, 1.1vw, 17px);
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--color-text-secondary);
+  }
+
+  /* Eyebrow / label — Inter, 13px, spaced caps */
+  .type-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  /* Button label — Inter, 14px */
+  .type-btn {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+
+  /* Metadata / caption — Inter, 13px */
+  .type-meta {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+  }
+}
+
+/* ── Utility aliases ── */
+@layer utilities {
+  .text-primary-color   { color: var(--color-text-primary); }
+  .text-secondary-color { color: var(--color-text-secondary); }
+  .bg-surface           { background-color: var(--color-bg-surface); }
+  .border-subtle        { border: 1px solid var(--color-border); }
+  .font-display         { font-family: var(--font-display); }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   LIGHT MODE — override every CSS variable when data-theme="light"
+   on the <html> element.
+   ───────────────────────────────────────────────────────────────── */
+[data-theme="light"] {
+  /* Backgrounds */
+  --color-bg-primary:   #F4F2EE;   /* warm parchment */
+  --color-bg-surface:   #ECEAE5;   /* slightly darker warm card */
+  --color-bg-input:     #E5E3DE;   /* input fields */
+
+  /* Borders */
+  --color-border:       #D0CEC8;
+  --color-border-focus: #00A07A;   /* keep teal focus ring */
+
+  /* Text */
+  --color-text-primary:     #1A1A1E;  /* near-black, warm */
+  --color-text-secondary:   #5A5A64;  /* mid-gray, warm */
+  --color-text-placeholder: #9A9A9E;
+
+  /* Accents stay consistent */
+  --color-primary:   #00826A;   /* slightly deeper teal on light bg for contrast */
+  --color-secondary: #B03A3C;   /* slightly deeper coral */
+
+  /* Legacy aliases */
+  --color-charcoal-900: #F4F2EE;
+  --color-charcoal-800: #ECEAE5;
+  --color-charcoal-700: #D0CEC8;
+  --color-cream:        #1A1A1E;
+  --color-muted:        #5A5A64;
+}
+
+/* ── Smooth palette transition when toggling ── */
+html {
+  transition:
+    background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    color            0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body,
+.bg-surface,
+[style*="--color-bg"] {
+  transition:
+    background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    color            0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color     0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
